@@ -1,0 +1,66 @@
+@media screen and (min-width: 428px) {
+  .container {
+    width: 426px;
+  }
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  /**-------HERO--------- */
+
+  .hero {
+    max-width: 428px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  .hero-heading {
+    max-width: 320px;
+    margin-bottom: 72px;
+
+    font-size: 36px;
+    line-height: 1.11;
+  }
+  /** -------ABOUT US------- */
+
+  .values-list-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+  .values-list-heading {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.11;
+  }
+  .values-list-text {
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 766px;
+  }
+  .hero {
+    max-width: 768px;
+  }
+  .hero-heading {
+    min-width: 496px;
+    margin-bottom: 36px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+
+  .hero {
+    max-width: 1158px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .hero-heading {
+    margin-bottom: 48px;
+  }
+}

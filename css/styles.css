@@ -50,7 +50,7 @@ body {
 }
 
 .container {
-  width: 1158px;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
@@ -186,9 +186,6 @@ body {
 
 .hero {
   margin: 0 auto;
-  max-width: 1440px;
-  padding-top: 188px;
-  padding-bottom: 188px;
 
   background-color: var(--hero-footer-background-color);
   background-image: linear-gradient(
@@ -203,12 +200,12 @@ body {
 
 .hero-heading {
   margin: 0 auto;
-  max-width: 496px;
-  margin-bottom: 48px;
+  /* max-width: 496px;
+  margin-bottom: 48px; */
 
   color: #ffffff;
-  font-size: 56px;
-  line-height: 1.07;
+  /* font-size: 56px;
+  line-height: 1.07; */
   text-align: center;
   letter-spacing: 0.02em;
 }
@@ -255,27 +252,28 @@ body {
 }
 /** -------ABOUT US------- */
 
-.values {
+/* .values {
   padding-top: 120px;
   padding-bottom: 60px;
-}
+} */
 
-.values-list {
+/* .values-list {
   display: flex;
   gap: 24px;
 }
 
 .values-list-item {
   width: calc((100% - 24px * 3) / 4);
+} */
+.values-list-heading {
+  /* margin-top: 8px; */
+  margin-bottom: 8px;
 }
 .values-list-heading {
-  margin-top: 8px;
-  margin-bottom: 8px;
-
   color: var(--headings-color);
-  font-weight: 500;
+  /* font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.2; */
   letter-spacing: 0.02em;
 }
 .values-list-text {
@@ -284,7 +282,8 @@ body {
   letter-spacing: 0.02em;
 }
 .icon-wrap {
-  display: flex;
+  /* display: flex; */
+  display: none;
   align-items: center;
   justify-content: center;
   width: 264px;
