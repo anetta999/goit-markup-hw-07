@@ -390,10 +390,6 @@ body {
 
 /**--------CUSTOMERS-------- */
 
-.customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 .customers-heading {
   margin-bottom: 72px;
 }
@@ -401,18 +397,20 @@ body {
 .customers-list {
   display: flex;
   align-items: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 72px;
 }
 
 .customers-list-item {
-  width: 168px;
+  width: 190px;
   height: 88px;
 }
 .customers-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 168px;
+  width: 190px;
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -420,13 +418,15 @@ body {
   transition: border-color var(--transition);
 }
 .customers-icon {
+  width: 110px;
+  height: 56px;
   fill: #8e8f99;
   transition: fill var(--transition);
 }
-.customers-link:is(:hover, :focus) {
+.customers-link:focus {
   border-color: var(--accent-color);
 }
-.customers-link:is(:hover, :focus) .customers-icon {
+.customers-link:focus .customers-icon {
   fill: var(--accent-color);
 }
 
