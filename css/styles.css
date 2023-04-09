@@ -258,11 +258,11 @@ body {
   text-transform: capitalize;
 }
 /** -------ABOUT US------- */
-.values-list {
+/* .values-list {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-}
+} */
 
 .values-list-heading {
   margin-bottom: 8px;
@@ -312,20 +312,20 @@ body {
 }
 
 /** ------OUR TEAM------ */
-.team > .container {
+/* .team > .container {
   max-width: 294px;
-}
+} */
 
 .team {
   background-color: var(--secondary-background-color);
 }
 
-.team-list {
+/* .team-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 72px;
-}
+} */
 
 .team-list-item {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -394,13 +394,13 @@ body {
   margin-bottom: 72px;
 }
 
-.customers-list {
+/* .customers-list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 72px;
-}
+} */
 
 .customers-list-item {
   width: calc((100% - 24px) / 2);
@@ -450,12 +450,12 @@ body {
 
   color: var(--footer-text-color);
 }
-.footer-container {
+/* .footer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 72px;
-}
+} */
 
 .footer-second-text {
   margin-bottom: 16px;
