@@ -1,3 +1,24 @@
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team > .container {
+    max-width: 294px;
+  }
+  .customers-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .customers-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -64,6 +85,13 @@
   .subscribe-input {
     width: 264px;
     margin-bottom: 0;
+  }
+  /**-------BACKDROP--------*/
+  .modal {
+    width: 408px;
+  }
+  .textarea-field {
+    margin-bottom: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -182,5 +210,9 @@
   .subscribe-btn:is(:hover, :focus) {
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  /**-------BACKDROP--------*/
+  .modal {
+    height: 584px;
   }
 }
