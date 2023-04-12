@@ -1,11 +1,6 @@
 @media screen and (max-width: 767px) {
   /**------MOBILE MENU--------- */
-  .mobile-menu-container {
-    position: relative;
-    padding-top: 80px;
-    padding-left: 40px;
-    padding-bottom: 40px;
-  }
+
   .mobile-menu-open {
     padding: 0;
 
@@ -15,14 +10,13 @@
   }
 
   .mobile-menu-close-btn {
-    position: absolute;
-    top: 24px;
-    right: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 24px;
     height: 24px;
+    margin-left: auto;
+    margin-bottom: 32px;
 
     background-color: #e7e9fc;
     opacity: 0.1;
@@ -30,15 +24,23 @@
     border-radius: 50%;
   }
   .mobile-menu-close-icon {
-    fill: #2e2f42;
+    stroke: #2e2f42;
   }
   .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 1000;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    overflow: auto;
 
     background-color: #ffffff;
 
@@ -48,6 +50,10 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+  }
+
+  .mobile-nav-list-item:not(:last-child) {
+    margin-bottom: 40px;
   }
   .mobile-nav-link {
     display: block;
@@ -66,6 +72,7 @@
 
   .mobile-tel-link {
     display: block;
+    margin-bottom: 40px;
 
     color: #4d5ae5;
     font-weight: 700;
@@ -80,6 +87,7 @@
   }
   .mobile-mail-link {
     display: block;
+    margin-bottom: 48px;
 
     color: #434455;
     font-weight: 500;
@@ -229,7 +237,24 @@
   /**-------HERO--------- */
   .hero {
     max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tablet.jpg);
   }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/hero-bg-tablet2x.jpg');
+    }
+  }
+
   .hero-heading {
     min-width: 496px;
     margin-bottom: 36px;
@@ -333,6 +358,22 @@
     max-width: 1158px;
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-desktop.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/hero-bg-desktop2x.jpg');
+    }
   }
   .hero-heading {
     margin-bottom: 48px;
