@@ -341,8 +341,14 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
   /**-------BACKDROP--------*/
+  .backdrop {
+    overflow: auto;
+  }
   .modal {
+    top: 96px;
+    left: 50%;
     width: 408px;
+    transform: translateX(-50%);
   }
   .textarea-field {
     margin-bottom: 16px;
