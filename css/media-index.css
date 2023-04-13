@@ -19,7 +19,7 @@
     margin-bottom: 32px;
 
     background-color: #e7e9fc;
-    opacity: 0.1;
+
     border: 1px solid #2e2f42;
     border-radius: 50%;
   }
@@ -69,7 +69,9 @@
   .mobile-nav-link:focus {
     color: var(--accent-color);
   }
-
+  .current-page {
+    color: var(--accent-color);
+  }
   .mobile-tel-link {
     display: block;
     margin-bottom: 40px;
@@ -107,9 +109,10 @@
   }
 
   .mobile-social-links-item {
-    width: 40px;
+    width: calc((100% - 56px * 3) / 4);
     height: 40px;
   }
+
   .mobile-social-link {
     display: flex;
     align-items: center;
@@ -138,6 +141,7 @@
   }
   .customers-list {
     display: flex;
+    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -149,7 +153,6 @@
   }
   .modal {
     width: 392px;
-    min-height: 586px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -487,6 +490,6 @@
   }
   /**-------BACKDROP--------*/
   .modal {
-    height: 584px;
+    min-height: 584px;
   }
 }
