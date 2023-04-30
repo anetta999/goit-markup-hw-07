@@ -75,6 +75,7 @@
   .mobile-tel-link {
     display: block;
     margin-bottom: 40px;
+    max-width: 353px;
 
     color: #4d5ae5;
     font-weight: 700;
@@ -151,12 +152,22 @@
   .customers-list-item {
     width: calc((100% - 24px) / 2);
   }
+
   .modal {
-    width: 392px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 392px;
+    width: 100%;
     min-height: 586px;
-    overflow: hidden;
+
+    transform: translate(-50%, -50%);
+  }
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0) rotateZ(180deg);
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -341,17 +352,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
   /**-------BACKDROP--------*/
-  .backdrop {
-    overflow: auto;
-  }
   .modal {
-    top: 96px;
-    left: 50%;
-    width: 408px;
-    transform: translateX(-50%);
-  }
-  .textarea-field {
-    margin-bottom: 16px;
+    max-width: 408px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -499,5 +501,8 @@
   /**-------BACKDROP--------*/
   .modal {
     min-height: 584px;
+  }
+  .textarea-field {
+    margin-bottom: 16px;
   }
 }
