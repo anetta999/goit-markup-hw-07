@@ -358,6 +358,7 @@
   .modal {
     top: 96px;
     left: 50%;
+    padding: 24px;
     max-width: 408px;
 
     transform: translateX(-50%);
